@@ -1,0 +1,8 @@
+Description:
+    Generate custom error template for AjaxErrorRenderer
+
+Example:
+    rails generate ajax_error_renderer:view
+
+    This will create:
+        app/views/ajax_errors/_error.html.erb
