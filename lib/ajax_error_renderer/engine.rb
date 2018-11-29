@@ -1,0 +1,4 @@
+module AjaxErrorRenderer
+  class Engine < ::Rails::Engine
+  end
+end
