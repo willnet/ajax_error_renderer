@@ -13,3 +13,12 @@ gemspec
 
 # To use a debugger
 # gem 'byebug', group: [:development, :test]
+group :development, :test do
+  gem "sqlite3"
+  gem "turbolinks"
+  gem "capybara"
+  gem "selenium-webdriver"
+  gem "chromedriver-helper"
+  gem "puma"
+  gem "pry-rails"
+end
