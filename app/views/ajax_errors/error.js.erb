@@ -1,1 +1,1 @@
-document.querySelector('<%= @location %>').innerHTML = "<%= j(render('error', model: @model)) %>";
+document.querySelector('<%= @location %>').innerHTML = "<%= j(render('ajax_errors/error', model: @model)) %>";
