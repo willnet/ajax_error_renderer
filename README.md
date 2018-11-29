@@ -1,5 +1,7 @@
 # AjaxErrorRenderer
 
+[![Gem Version](https://badge.fury.io/rb/ajax_error_renderer.svg)](https://badge.fury.io/rb/ajax_error_renderer)
+
 [![CircleCI](https://circleci.com/gh/willnet/ajax_error_renderer/tree/master.svg?style=svg)](https://circleci.com/gh/willnet/ajax_error_renderer/tree/master)
 
 AjaxErrorRenderer is a validation error renderer for ajax request.
