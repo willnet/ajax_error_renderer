@@ -9,9 +9,9 @@ Gem::Specification.new do |s|
   s.version     = AjaxErrorRenderer::VERSION
   s.authors     = ["willnet"]
   s.email       = ["netwillnet@gmail.com"]
-  s.homepage    = "TODO"
-  s.summary     = "TODO: Summary of AjaxErrorRenderer."
-  s.description = "TODO: Description of AjaxErrorRenderer."
+  s.homepage    = "https://github.com/willnet/ajax_error_renderer"
+  s.summary     = "a friend with turbolinks and form_with"
+  s.description = "validation error renderer for ajax request"
   s.license     = "MIT"
 
   s.files = Dir["{app,config,db,lib}/**/*", "MIT-LICENSE", "Rakefile", "README.md"]
