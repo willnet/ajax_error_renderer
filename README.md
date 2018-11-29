@@ -49,7 +49,7 @@ class UsersController < ApplicationController
 end
 ```
 
-So error messages display within `#errors` by default.
+So error messages display within `#error` by default.
 
 ```erb
 <%= form_with(model: @user) do |form| %>
