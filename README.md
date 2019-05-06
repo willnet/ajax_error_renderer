@@ -77,6 +77,16 @@ If you want to display the messages in other place, you can do it by passing `lo
 render_ajax_error model: @user, location: '.error_messages'
 ```
 
+### Scroll to error messages
+
+If you have a large form, users can miss validation error messages because the messages display above user screen. To solve the problem, render_ajax_error method has move option to scroll to error messages. It defaults to true.
+
+If you won't scroll, you can write like following.
+
+```ruby
+render_ajax_error model: @user, move: false
+```
+
 ### Custom Template
 
 You can create custome template with a generator like following.
