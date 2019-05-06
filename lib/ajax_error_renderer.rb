@@ -1,6 +1,8 @@
 require "ajax_error_renderer/engine"
 
 module AjaxErrorRenderer
+  private
+
   def render_ajax_error(location: '#error', model:, status: 422)
     @location = location
     @model = model
