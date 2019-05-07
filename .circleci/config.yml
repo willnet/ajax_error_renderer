@@ -27,3 +27,5 @@ jobs:
       - run:
           name: run tests
           command: bundle exec rake
+      - store_artifacts:
+          path: ~/repo/tmp/screenshots
