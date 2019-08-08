@@ -95,6 +95,14 @@ You can create custome template with a generator like following.
 
 This generator command generates `app/views/ajax_errors/_error.html.erb`, and you can customize it freely.
 
+To use another templates, you can use `template` argument.
+
+```ruby
+render_ajax_error model: @user, template: 'critical_error'
+```
+
+Template `app/views/ajax_errors/_critical_error.html.erb` will use.
+
 ## License
 
 The gem is available as open source under the terms of the [MIT License](https://opensource.org/licenses/MIT).

@@ -29,7 +29,7 @@ class UsersController < ApplicationController
     if @user.update(user_params)
       redirect_to @user, notice: 'User was successfully updated.'
     else
-      render_ajax_error model: @user
+      render_ajax_error model: @user, template: 'update_error'
     end
   end
 
