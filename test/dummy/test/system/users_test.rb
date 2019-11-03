@@ -28,6 +28,7 @@ class UsersTest < ApplicationSystemTestCase
     click_on "Create User"
 
     assert_text "Name can't be blank"
+    assert page.has_css?('#error_explanation')
   end
 
   test "updating a User" do
@@ -39,6 +40,17 @@ class UsersTest < ApplicationSystemTestCase
 
     assert_text "User was successfully updated"
     click_on "Back"
+  end
+
+  test "updating a User with blank name" do
+    visit users_url
+    click_on "Edit", match: :first
+
+    fill_in "Name", with: ''
+    click_on "Update User"
+
+    assert_text "Name can't be blank"
+    assert page.has_css?('#update_error_explanation')
   end
 
   test "destroying a User" do

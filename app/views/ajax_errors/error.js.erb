@@ -1,5 +1,5 @@
 var element = document.querySelector('<%= @location %>');
-element.innerHTML = "<%= j(render('ajax_errors/error', model: @model)) %>";
+element.innerHTML = "<%= j(render("ajax_errors/#{@template}", model: @model)) %>";
 <% if @move %>
 element.scrollIntoView(true);
 <% end %>
